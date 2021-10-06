@@ -507,3 +507,116 @@ button {
     text-align: center;
 }
 /* privilege section end */
+/* price section start */
+.price-section {
+    min-height: 500px;
+    background-color: gray;
+}
+.price-title {
+    color: rgb(255, 255, 255);
+}
+/* price section end */
+
+/* doctors section start */
+.doctors-section {
+    margin: 50px 0;
+}
+.slider-doctors-box {
+    width: 350px;
+    height: 570px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 4px rgba(129, 181, 255, 0.25);
+    margin: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.photo_of_doctor {
+    width: 100%;
+    height: 450px;
+}
+.slider-doctors-txt-wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 10px 10px 10px 15px;
+}
+.slider-doctors-txt-box {
+    display: flex;
+    flex-direction: column;
+}
+.slider-name-of-doctor {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.slider-skill-of-doctor {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 7px 0 5px;
+    color: #959595;
+    position: relative;
+    padding-left: 15px;
+}
+.slider-skill-of-doctor::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/doctors/ico-skill.png);
+    left: 0;
+    top: 2px;
+}
+.slider-experience-of-doctor {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #959595;
+    position: relative;
+    padding-left: 15px;
+}
+.slider-experience-of-doctor::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/doctors/ico-exp.png);
+    left: 0;
+    top: 2px;
+}
+.slider-doctors-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 27.93% at 62.9% 52.51%, #81B5FF 0%, #73A7F0 97.92%);
+    border-radius: 10px;
+    width: 95px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+}
+.slider-doctors-button::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #73A7F0;
+    top: 0;
+    left: 0;
+}
+.slider-doctors-button::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #73A7F0;
+    top: 48px;
+    left: 83px;
+}
+/* doctors section end */
