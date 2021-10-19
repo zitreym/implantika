@@ -509,11 +509,104 @@ button {
 /* privilege section end */
 /* price section start */
 .price-section {
-    min-height: 500px;
-    background-color: gray;
+    display: flex;
+    padding: 30px 100px;
+}
+.price-txt-wrp {
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    align-items: flex-start;
 }
 .price-title {
-    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 40px;
+    line-height: 25px;
+    color: #1B75BC;
+}
+.price-txt {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 25px;
+    color: #333333;
+}
+.all-price-button {
+    padding: 5px 15px;
+    display: block;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 25px;
+    color: #617CC4;
+    border: solid 1px #617CC4;
+    border-radius: 15px;
+}
+.all-price-button:hover {
+    background-color: #617CC4;
+    color: white;
+}
+.price-table-wrp {
+    width: 100%;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.price-cat-list {
+    padding: 5px 10px;
+    border: 1px solid #1b76bcaf;
+    font-size: 18px;
+}
+.search-price-wrp {
+    display: flex;
+}
+.search-price {
+    padding: 6px 10px;
+    border: 1px solid #1b76bcaf;
+    font-size: 18px;
+    width: 600px;
+}
+.search-price-button {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #1b76bcaf;
+}
+.search-ico {
+    width: 25px;
+    height: 25px;
+}
+.price-list-txt-wrp {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 55px;
+}
+.price-item-wrp {
+    padding: 12px 12px 12px 20px;
+    width: 100%;
+    display: flex;
+}
+.price-list-item {
+    width: 85%;
+    font-size: 18px;
+}
+.price-list-item-price {
+    text-align: end;
+    font-size: 18px;
+    width: 15%;
+}
+.price-list-blue {
+    background-color: #f3fafe;
+}
+.price-item-wrp:hover {
+    background-color: rgba(33,124,196,0.27);
+}
+.price-hiden {
+    display: none;
 }
 /* price section end */
 
