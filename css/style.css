@@ -713,3 +713,98 @@ button {
     left: 83px;
 }
 /* doctors section end */
+/* reviews section start */
+.reviews-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-title-wrp {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.reviews-title {
+    max-width: 800px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 50px;
+}
+.reviews-button-all {
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+.reviews-wrp {
+    padding: 25px 0;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-box {
+    padding: 17px 15px;
+    width: 210px;
+    height: 120px;
+    border: 5px solid #FAFAFA;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reviews-stars-wrp {
+    display: flex;
+    align-items: flex-end;
+}
+.reviews-img {
+    background-position: center;
+    background-size: cover;
+    height: 39px;
+}
+.reviews-img-yandex {
+    width: 100px;
+    background-image: url(../img/reviews/yandex.png);
+}
+.reviews-img-prodoctorov {
+    width: 164px;
+    background-image: url(../img/reviews/prodoctorov.png);
+}
+.reviews-img-zoon {
+    width: 100px;
+    background-image: url(../img/reviews/zoon.png);
+}
+.reviews-img-google {
+    width: 120px;
+    background-image: url(../img/reviews/google.png);
+}
+.reviews-img-yell {
+    width: 90px;
+    background-image: url(../img/reviews/yell.png);
+}
+.review-star {
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 2px;
+}
+.review-star-100 {
+    background-image: url(../img/reviews/stars/star100.png);
+}
+.review-star-50 {
+    background-image: url(../img/reviews/stars/star50.png);
+}
+.review-star-0 {
+    background-image: url(../img/reviews/stars/star0.png);
+}
+.review-ball {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 5px;
+}
+/* reviews section end */
