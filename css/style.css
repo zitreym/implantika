@@ -38,6 +38,7 @@ button {
     position:fixed;
     top:0px;
     display: none;
+    z-index: 2;
 }
 .b-popup .b-popup-content{
     display: flex;
@@ -144,7 +145,7 @@ button {
 /* popup end */
 /* start header */
 .main-header {
-
+    
 }
 .fixed-header {
     display: flex;
@@ -287,30 +288,28 @@ button {
     height: 4px;
     width: 100%;
     background: linear-gradient(90deg, #3D8DDC 0%, #35699D 12.5%, #67A2DD 25.52%, #496F95 37.5%, #5B96D1 50%, #57A5F2 60.94%, #2F8CE9 73.44%, #407BB7 85.42%, #2768A8 93.23%, #4A89C8 100%);
-    margin-bottom: 50px;
 }
 /* slider start */
 .slider-box {
-    width: 1200px;
-    height: 600px;
+    width: 1920px;
+    height: 800px;
     background-image: url(../img/banner/gigiena-bcg.png);
     background-size: cover;
     background-position: center;
-    border-radius: 30px;
     margin: 0 100px;
     display: flex;
     flex-direction: column;
-    padding: 50px 400px 60px 80px;
+    padding: 50px 600px 60px 80px;
     justify-content: space-around;
 }
 .banner-title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 60px;
     color: #001D68;
 }
 .banner-decription {
     color: #001D68;
-    font-size: 12px;
+    font-size: 24px;
 }
 .price-wrp {
     display: flex;
@@ -324,23 +323,23 @@ button {
     margin-right: 40px;
 }
 .old-price-decription {
-    font-size: 12px;
+    font-size: 24px;
     color: #939393;
 }
 .old-price {
-    font-size: 28px;
+    font-size: 56px;
     text-decoration-line: line-through;
     color: #939393;
 }
 .new-price-decription {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 36px;
     color: #3857A6;
     text-shadow: 4px 4px 10px #FFFFF2;
 }
 .new-price {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 70px;
     color: #3857A6;
     text-shadow: 4px 4px 10px #FFFFF2;
 }
@@ -349,20 +348,20 @@ button {
     align-items: flex-end;
 }
 .time-decription {
-    font-size: 25px;
+    font-size: 50px;
     color: #001D68;
     margin-right: 25px;
 }
 .time-date {
     display: flex;
-    font-size: 25px;
+    font-size: 50px;
     color: #FFFFFF;
     background: linear-gradient(180deg, #111344 0%, #111344 51.58%, #FFFFFF 52.53%, #1F226C 54.16%, #1F226C 113.33%);
     border-radius: 5px;
     justify-content: center;
     margin-right: 1px;
-    width: 25px;
-    height: 30px;
+    width: 50px;
+    height: 60px;
 }
 .time-date-5px {
     margin-right: 10px;
@@ -376,7 +375,7 @@ button {
     border: 1px solid #001D68;
     border-radius: 20px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 30px;
     color: #000000;
     margin-right: 40px;
 }
@@ -388,7 +387,7 @@ button {
     border: 1px solid #001D68;
     border-radius: 20px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 30px;
     color: #FFFFFF;
 }
 .ostem-banner {
@@ -406,50 +405,134 @@ button {
     width: 100%;
 }
 /* buttons of service secrion start */
-.buttons-of-service {
-    margin: 100px 0 80px;
+.buttons-of-service-test {
+    margin: 30px 0 80px;
     display: flex;
     flex-wrap: wrap;
 }
-
-.buttons-of-service-box {
+.buttons-of-service-box-test2 {
+    display: block;
+    width: calc(100%/4);
+    height: 38vh;
+    border: solid 1px #527ebd2e;
+    border-right: none;
+    background-color: rgb(160, 221, 160);
+    background-image: url(../img/buttons-of-services/healht.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.buttons-of-service-healht {
+    background-image: url(../img/buttons-of-services/healht.png);
+}
+.buttons-of-service-extraction {
+    background-image: url(../img/buttons-of-services/extraction.png);
+}
+.buttons-of-service-implant {
+    background-image: url(../img/buttons-of-services/implant.png);
+}
+.buttons-of-service-children {
+    background-image: url(../img/buttons-of-services/children.png);
+}
+.buttons-of-service-broken-tooth {
+    background-image: url(../img/buttons-of-services/broken-tooth.png);
+}
+.buttons-of-service-tooth-cleaning {
+    background-image: url(../img/buttons-of-services/tooth-cleaning.png);
+}
+.buttons-of-service-braces {
+    background-image: url(../img/buttons-of-services/braces.png);
+}
+.buttons-of-service-gum {
+    background-image: url(../img/buttons-of-services/gum.png);
+}
+.buttons-of-service-box-test {
+    box-sizing: border-box;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    width: calc(100%/4);
-    height: 38vh;
-    border: solid 1px #527ebd2e;
-    border-right: none;
+    width: 100%;
+    height: 100%;
+    transition: .5s linear;
+    background-color: white;
+    position: relative;
 }
-.buttons-of-service-box:hover .buttons-of-service-img {
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
+.buttons-of-service-box-test:hover {
+    width: 0;
 }
-.buttons-of-service-box:hover .buttons-of-service-txt {
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
+.buttons-of-service-box-test2:hover .buttons-of-service-box-test {
+    width: 0;
 }
-.buttons-of-service-box:nth-child(1), .buttons-of-service-box:nth-child(5) {
+.buttons-of-service-box-test2:nth-child(1), .buttons-of-service-box-test2:nth-child(5) {
     border-left: none;
 }
-.buttons-of-service-box:nth-child(1), .buttons-of-service-box:nth-child(2) , .buttons-of-service-box:nth-child(3) , .buttons-of-service-box:nth-child(4) {
+.buttons-of-service-box-test2:nth-child(1), .buttons-of-service-box-test2:nth-child(2) , .buttons-of-service-box-test2:nth-child(3) , .buttons-of-service-box-test2:nth-child(4) {
     border-bottom: none;
 }
-.buttons-of-service-img {
+.buttons-of-service-img-test {
     width: 200px;
     height: 200px;
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    transition: .5s linear;
 }
-.buttons-of-service-txt {
-    max-width: 250px;
+.buttons-of-service-txt-test {
+    width: 250px;
     font-weight: 600;
     margin-top: 25px;
     color: #1562d0;
     font-size: 28px;
     text-align: center;
+    position: absolute;
+    top: 230px;
+    left: 115px;
+    transition: .5s linear;
+}
+.buttons-of-service-box-test2:hover .buttons-of-service-img-test {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    fill: white;
+    stroke:white;
+}
+.buttons-of-service-box-test:hover .buttons-of-service-img-test {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    fill: white;
+    stroke:white;
+}
+.buttons-of-service-box-test2:hover .buttons-of-service-txt-test {
+    width: 250px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: white;
+    font-size: 28px;
+    text-align: left;
+    position: absolute;
+    top: 230px;
+    left: 30px;
+}
+.buttons-of-service-box-test:hover .buttons-of-service-txt-test {
+    width: 250px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: white;
+    font-size: 28px;
+    text-align: left;
+    position: absolute;
+    top: 230px;
+    left: 30px;
+}
+.buttons-of-service-img-test-green:hover {
+   fill:  green;
 }
 /* buttons of service secrion end */
 /* privilege section start */
@@ -476,13 +559,15 @@ button {
 .privilege-wrp {
     padding: 0 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly;  
+    flex-wrap: wrap;
 }
 .privelege-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 400px;
+    margin-bottom: 30px;
 }
 .privelege-img {
     width: 150px;
@@ -807,4 +892,129 @@ button {
     color: #000000;
     margin-left: 5px;
 }
+.reviews-users-wrp {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-users-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 570px;
+    height: 250px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding: 30px 0 25px;
+    position: relative;
+}
+.reviews-user-name-wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.review-user-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: #676767;
+}
+.reviews-user-txt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: justify;
+    color: #676767;
+    padding: 0 40px;
+    position: absolute;
+    top: 34%;
+}
+.reviews-user-span {
+    width: 100%;
+    height: 1px;
+    background-color: #EBEBEB;
+    position: absolute;
+    top: 78%;
+}
+.reviews-source, .reviews-source-url, .reviews-user-date  {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #A8A8A8;
+}
+.reviews-source-url {
+    text-decoration: underline;
+}
+.reviews-all-buttons {
+    margin: 35px 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration-line: underline;
+    color: #000000;
+}
 /* reviews section end */
+/*   map section start */
+.map-section {
+    position: relative;
+  }
+  .map-info {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 50%;
+    border: 10px solid #CDE8FC;
+    display: flex;
+    flex-direction: column;
+  }
+  .map-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: #575757;
+    margin: 50px 0 20px;
+  }
+  .map-address {
+    font-size: 22px;
+    text-align: center;
+    color: #575757;
+  }
+  .map-route {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #43A2E9;
+    margin-bottom: 15px;
+  }
+  .map-txt {
+    font-size: 18px;
+    text-align: center;
+    color: #575757;
+  }
+  .map-tel {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #575757;
+    margin-bottom: 20px;
+  }
+  /*   map section end */
+/*   footer start */
+.footer {
+    height: 500px;
+    width: 100%;
+    background-color: gray;
+}
+/*   footer end */
+
+/* test part */
